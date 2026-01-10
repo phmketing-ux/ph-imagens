@@ -26,7 +26,7 @@ body {
 /* HERO */
 header.hero {
   text-align: center;
-  padding: 70px 20px 60px;
+  padding: 60px 20px 40px;
   max-width: 1200px;
   margin: auto;
 }
@@ -35,7 +35,7 @@ header.hero {
 .header-image {
   width: 100%;
   max-width: 820px;
-  margin: 0 auto 25px;
+  margin: 0 auto 16px;
 }
 
 .header-image img {
@@ -45,9 +45,9 @@ header.hero {
 }
 
 /* TEXTO HERO */
-header p {
-  margin-top: 14px;
-  font-size: 1.15rem;
+.hero p {
+  margin-top: 6px;
+  font-size: 1.1rem;
   color: #d6c9ff;
   max-width: 760px;
   margin-left: auto;
@@ -58,10 +58,9 @@ header p {
 .banner-wrapper {
   width: 100%;
   max-width: 1100px;
-  height: 320px;
-  margin: 45px auto 30px;
+  height: 300px;
+  margin: 28px auto 22px;
   overflow: hidden;
-  border-radius: 0;
 }
 
 .banner-wrapper img {
@@ -74,67 +73,85 @@ header p {
 /* BOTÃO */
 .cta {
   display: inline-block;
-  margin-top: 26px;
-  padding: 16px 38px;
+  margin-top: 18px;
+  padding: 15px 36px;
   border-radius: 999px;
   background: linear-gradient(135deg, #a855f7, #7c3aed);
   color: #ffffff;
   font-weight: 600;
   text-decoration: none;
   font-size: 1.05rem;
-  box-shadow: 0 0 30px rgba(168,85,247,0.6);
+  box-shadow: 0 0 26px rgba(168,85,247,0.6);
   transition: transform .2s ease, box-shadow .2s ease;
 }
 
 .cta:hover {
   transform: translateY(-2px) scale(1.03);
-  box-shadow: 0 0 50px rgba(168,85,247,0.9);
+  box-shadow: 0 0 44px rgba(168,85,247,0.9);
 }
 
 /* CONTEÚDO */
 section.content {
   max-width: 1000px;
   margin: auto;
-  padding: 70px 20px 120px;
+  padding: 55px 20px 80px;
 }
 
 section h2 {
-  font-size: 2.3rem;
+  font-size: 2.2rem;
   color: #a855f7;
-  margin-bottom: 18px;
+  margin-bottom: 12px;
 }
 
 section p {
   font-size: 1.05rem;
   color: #e5ddff;
-  max-width: 820px;
+  max-width: 860px;
+}
+
+/* BLOCO VISUAL EXTRA */
+.visual-block {
+  max-width: 1100px;
+  margin: 40px auto 60px;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.visual-block img {
+  width: 100%;
+  max-width: 760px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* RODAPÉ */
+footer {
+  margin-top: 60px;
+  padding: 28px 20px 40px;
+  text-align: center;
+  color: #b9a7ff;
+  font-size: 0.9rem;
+  opacity: 0.85;
 }
 
 /* MOBILE */
 @media (max-width: 768px) {
 
   header.hero {
-    padding: 50px 16px 40px;
-  }
-
-  .header-image {
-    max-width: 100%;
-  }
-
-  header p {
-    font-size: 1rem;
+    padding: 45px 16px 30px;
   }
 
   .banner-wrapper {
-    height: 220px;
+    height: 210px;
   }
 
   section h2 {
-    font-size: 1.8rem;
+    font-size: 1.7rem;
   }
 
   .cta {
-    padding: 14px 28px;
+    padding: 13px 28px;
     font-size: 0.95rem;
   }
 }
@@ -145,7 +162,7 @@ section p {
 
 <header class="hero">
 
-  <!-- CABEÇALHO -->
+  <!-- IMAGEM DE TÍTULO -->
   <div class="header-image">
     <img src="/ph-imagens/cabecalho.png" alt="Ph Imagens">
   </div>
@@ -172,6 +189,15 @@ section p {
     interação rápida e organização criativa. Ele transforma ideias em imagens de forma simples, fluida e visual.
   </p>
 </section>
+
+<!-- BLOCO VISUAL / IDENTIDADE -->
+<section class="visual-block">
+  <img src="/ph-imagens/logo-ph.png" alt="Ph Imagens identidade visual">
+</section>
+
+<footer>
+  Philippe R. Porfirio © Todos os direitos reservados. 2026.
+</footer>
 
 </body>
 </html>
