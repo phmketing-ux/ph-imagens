@@ -63,4 +63,158 @@ header p {
 
 .cta {
   display: inline-block;
-  margin-top: 18
+  margin-top: 18px;
+  padding: 16px 40px;
+  background: linear-gradient(135deg, #7b5cff, #a855f7);
+  border-radius: 40px;
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s;
+  box-shadow: 0 0 28px rgba(168,85,247,0.5);
+}
+
+.cta:hover {
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 0 50px rgba(168,85,247,0.8);
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 30px 24px 80px;
+}
+
+section {
+  margin-top: 80px;
+}
+
+h2 {
+  color: #a855f7;
+  font-size: 2.1rem;
+  margin-bottom: 14px;
+}
+
+p {
+  color: #e4dbff;
+  max-width: 800px;
+}
+
+ul {
+  margin-top: 16px;
+  list-style: none;
+}
+
+ul li {
+  margin-bottom: 10px;
+  color: #ddd;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 22px;
+  margin-top: 22px;
+}
+
+.card {
+  background: linear-gradient(180deg, #140a24, #0b0415);
+  padding: 22px;
+  border-radius: 16px;
+  border: 1px solid rgba(168,85,247,0.15);
+  box-shadow: 0 0 22px rgba(0,0,0,0.35);
+}
+
+footer {
+  margin-top: 100px;
+  padding: 36px 24px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #9f8cff;
+  border-top: 1px solid rgba(168,85,247,0.15);
+}
+
+@media (max-width: 700px) {
+  header h1 {
+    font-size: 2.4rem;
+  }
+  .banner {
+    margin-top: 28px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header class="hero">
+
+  <div class="brand">
+    <img src="icon.png" class="logo" alt="Ph Imagens Icon">
+    <h1>Ph Imagens</h1>
+  </div>
+
+  <p>Crie, explore e experimente imagens com IA em um mural criativo inteligente.</p>
+
+  <img src="banner.png" class="banner" alt="Ph Imagens Banner">
+
+  <a href="https://aistudio.google.com/apps/drive/1aH4kuxuLOmMf9e0wCiRY2wXmXkC6EOmc?fullscreenApplet=true&showPreview=true&showAssistant=true" 
+     class="cta" target="_blank">Abrir Ph Imagens</a>
+
+</header>
+
+<div class="container">
+
+<section>
+<h2>O que é o Ph Imagens?</h2>
+<p>
+Ph Imagens é um aplicativo de geração de imagens com inteligência artificial focado em criação visual,
+iteração rápida e organização criativa. Ele transforma ideias em imagens de forma simples, fluida e visual.
+</p>
+</section>
+
+<section>
+<h2>Como funciona</h2>
+<ul>
+<li>✦ Descreva sua ideia criativa</li>
+<li>✦ Envie imagens ou tire fotos como referência</li>
+<li>✦ Escolha entre Ph Imagens · Simples ou Ph Imagens · Pro</li>
+<li>✦ Gere imagens organizadas automaticamente no mural</li>
+</ul>
+</section>
+
+<section>
+<h2>Principais recursos</h2>
+<div class="grid">
+<div class="card">Geração de imagens com IA</div>
+<div class="card">Mural visual por gerações</div>
+<div class="card">Imagens de referência</div>
+<div class="card">Modelos Simples e Pro</div>
+<div class="card">Geração paralela</div>
+<div class="card">Fluxo criativo contínuo</div>
+</div>
+</section>
+
+<section>
+<h2>Por que usar</h2>
+<p>
+Diferente de geradores comuns, o Ph Imagens foi pensado como uma ferramenta criativa.
+Menos técnica. Mais visual. Mais fluxo. Mais criação.
+</p>
+</section>
+
+<section style="text-align:center">
+<h2>Pronto para criar?</h2>
+<a href="https://aistudio.google.com/apps/drive/1aH4kuxuLOmMf9e0wCiRY2wXmXkC6EOmc?fullscreenApplet=true&showPreview=true&showAssistant=true" 
+   class="cta" target="_blank">Testar Ph Imagens agora</a>
+</section>
+
+</div>
+
+<footer>
+Ph Imagens — Gerador de imagens com IA<br>
+Projeto experimental focado em criação visual, design e inteligência artificial.
+</footer>
+
+</body>
+</html>
