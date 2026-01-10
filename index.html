@@ -114,11 +114,84 @@ section p {
   font-size: 1.05rem;
 }
 
+/* VIDEO */
+
+.video-section {
+  max-width: 1000px;
+  margin: 40px auto 30px;
+  padding: 0 22px;
+  text-align: center;
+}
+
+.video-box {
+  position: relative;
+  padding-top: 56.25%;
+  border-radius: 22px;
+  overflow: hidden;
+  border: 2px solid rgba(168,85,247,0.5);
+  box-shadow:
+    0 0 25px rgba(168,85,247,0.35),
+    inset 0 0 25px rgba(168,85,247,0.25);
+  background: #000;
+}
+
+.video-box iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* REDES SOCIAIS */
+
+.social {
+  text-align: center;
+  margin-top: 26px;
+  margin-bottom: 10px;
+}
+
+.social h3 {
+  font-weight: 500;
+  font-size: 1rem;
+  color: #cdbbff;
+  margin-bottom: 14px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 26px;
+}
+
+.social-icons a {
+  display: inline-flex;
+  width: 46px;
+  height: 46px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 1px solid rgba(255,255,255,0.15);
+  transition: transform .2s ease, box-shadow .2s ease, background .2s ease;
+}
+
+.social-icons a:hover {
+  transform: translateY(-2px) scale(1.08);
+  background: rgba(168,85,247,0.15);
+  box-shadow: 0 0 20px rgba(168,85,247,0.5);
+}
+
+.social-icons svg {
+  width: 22px;
+  height: 22px;
+  fill: #ffffff;
+}
+
 /* RODAPÉ */
 
 footer {
-  margin-top: 64px;
-  padding: 28px 20px 36px;
+  margin-top: 26px;
+  padding: 22px 20px 34px;
   text-align: center;
   font-size: 0.9rem;
   color: #bda8ff;
@@ -149,7 +222,6 @@ footer {
 
 <header class="hero">
 
-  <!-- CABEÇALHO EM IMAGEM -->
   <div class="header-image">
     <img src="cabecalho.png" alt="Ph Imagens">
   </div>
@@ -158,12 +230,10 @@ footer {
     Crie, explore e experimente imagens com IA em um mural criativo inteligente.
   </p>
 
-  <!-- BANNER -->
   <div class="banner-wrap">
     <img src="banner.png" alt="Banner Ph Imagens">
   </div>
 
-  <!-- BOTÃO -->
   <a class="cta"
      href="https://aistudio.google.com/apps/drive/1aH4kuxuLOmMf9e0wCiRY2wXmXkC6EOmc?fullscreenApplet=true&showPreview=true&showAssistant=true"
      target="_blank">
@@ -178,6 +248,39 @@ footer {
     Ph Imagens é um aplicativo de geração de imagens com inteligência artificial focado em criação visual, interação rápida e organização criativa. Ele transforma ideias em imagens de forma simples, fluida e visual.
   </p>
 </section>
+
+<!-- VIDEO -->
+<div class="video-section">
+  <div class="video-box">
+    <iframe 
+      src="https://www.youtube.com/embed/LZ0r703rwjo?autoplay=1&mute=1&rel=0&modestbranding=1"
+      title="Caio revela dicas práticas para crescer nas redes sociais"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen>
+    </iframe>
+  </div>
+</div>
+
+<!-- REDES SOCIAIS -->
+<div class="social">
+  <h3>Me acompanhe nas redes</h3>
+  <div class="social-icons">
+
+    <a href="https://www.instagram.com/ph.mketing/" target="_blank" aria-label="Instagram">
+      <svg viewBox="0 0 24 24">
+        <path d="M7.75 2h8.5C19.42 2 22 4.58 22 7.75v8.5C22 19.42 19.42 22 16.25 22h-8.5C4.58 22 2 19.42 2 16.25v-8.5C2 4.58 4.58 2 7.75 2zm0 1.5A4.25 4.25 0 003.5 7.75v8.5A4.25 4.25 0 007.75 20.5h8.5a4.25 4.25 0 004.25-4.25v-8.5a4.25 4.25 0 00-4.25-4.25h-8.5zM12 7a5 5 0 110 10 5 5 0 010-10zm0 1.5a3.5 3.5 0 100 7 3.5 3.5 0 000-7zm5.25-.88a1.13 1.13 0 11-2.26 0 1.13 1.13 0 012.26 0z"/>
+      </svg>
+    </a>
+
+    <a href="https://www.youtube.com/@ph.mketing" target="_blank" aria-label="YouTube">
+      <svg viewBox="0 0 24 24">
+        <path d="M23.5 6.19a3 3 0 00-2.11-2.12C19.55 3.5 12 3.5 12 3.5s-7.55 0-9.39.57A3 3 0 00.5 6.19 31.9 31.9 0 000 12a31.9 31.9 0 00.5 5.81 3 3 0 002.11 2.12C4.45 20.5 12 20.5 12 20.5s7.55 0 9.39-.57a3 3 0 002.11-2.12A31.9 31.9 0 0024 12a31.9 31.9 0 00-.5-5.81zM9.75 15.5v-7l6 3.5-6 3.5z"/>
+      </svg>
+    </a>
+
+  </div>
+</div>
 
 <footer>
   Philippe R. Porfirio © Todos os direitos reservados. 2026.
