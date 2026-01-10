@@ -20,11 +20,15 @@ body {
   background: radial-gradient(circle at top, #1b102f, #05010a);
   color: #ffffff;
   line-height: 1.6;
+  overflow-x: hidden;
 }
 
+/* HERO */
 header.hero {
   text-align: center;
-  padding: 80px 24px 70px;
+  padding: 80px 20px 60px;
+  max-width: 1200px;
+  margin: auto;
 }
 
 .brand {
@@ -32,6 +36,7 @@ header.hero {
   align-items: center;
   justify-content: center;
   gap: 16px;
+  flex-wrap: wrap;
 }
 
 .logo {
@@ -42,104 +47,110 @@ header.hero {
 }
 
 header h1 {
-  font-size: 3.2rem;
+  font-size: 3rem;
   font-weight: 700;
   color: #a855f7;
 }
 
 header p {
-  margin-top: 14px;
-  font-size: 1.2rem;
+  margin-top: 16px;
+  font-size: 1.15rem;
   color: #d6c9ff;
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.banner {
+/* BANNER CORRIGIDO */
+.banner-wrapper {
   width: 100%;
-  max-width: 950px;
-  margin: 40px auto 28px;
+  max-width: 980px;
+  height: 320px;
+  margin: 50px auto 30px;
   border-radius: 22px;
+  overflow: hidden;
   box-shadow: 0 0 60px rgba(168,85,247,0.45);
+  background: #12071f;
 }
 
+.banner-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* BOTÃO */
 .cta {
   display: inline-block;
-  margin-top: 18px;
-  padding: 16px 40px;
-  background: linear-gradient(135deg, #7b5cff, #a855f7);
-  border-radius: 40px;
-  color: #fff;
+  margin-top: 26px;
+  padding: 16px 38px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #a855f7, #7c3aed);
+  color: #ffffff;
   font-weight: 600;
   text-decoration: none;
-  transition: 0.3s;
-  box-shadow: 0 0 28px rgba(168,85,247,0.5);
+  font-size: 1.05rem;
+  box-shadow: 0 0 30px rgba(168,85,247,0.6);
+  transition: transform .2s ease, box-shadow .2s ease;
 }
 
 .cta:hover {
   transform: translateY(-2px) scale(1.03);
-  box-shadow: 0 0 50px rgba(168,85,247,0.8);
+  box-shadow: 0 0 50px rgba(168,85,247,0.9);
 }
 
-.container {
-  max-width: 1100px;
+/* CONTEÚDO */
+section.content {
+  max-width: 1000px;
   margin: auto;
-  padding: 30px 24px 80px;
+  padding: 80px 20px 120px;
 }
 
-section {
-  margin-top: 80px;
-}
-
-h2 {
+section h2 {
+  font-size: 2.3rem;
   color: #a855f7;
-  font-size: 2.1rem;
-  margin-bottom: 14px;
+  margin-bottom: 18px;
 }
 
-p {
-  color: #e4dbff;
-  max-width: 800px;
+section p {
+  font-size: 1.05rem;
+  color: #e5ddff;
+  max-width: 820px;
 }
 
-ul {
-  margin-top: 16px;
-  list-style: none;
-}
+/* MOBILE */
+@media (max-width: 768px) {
 
-ul li {
-  margin-bottom: 10px;
-  color: #ddd;
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 22px;
-  margin-top: 22px;
-}
-
-.card {
-  background: linear-gradient(180deg, #140a24, #0b0415);
-  padding: 22px;
-  border-radius: 16px;
-  border: 1px solid rgba(168,85,247,0.15);
-  box-shadow: 0 0 22px rgba(0,0,0,0.35);
-}
-
-footer {
-  margin-top: 100px;
-  padding: 36px 24px;
-  text-align: center;
-  font-size: 0.9rem;
-  color: #9f8cff;
-  border-top: 1px solid rgba(168,85,247,0.15);
-}
-
-@media (max-width: 700px) {
-  header h1 {
-    font-size: 2.4rem;
+  header.hero {
+    padding: 60px 16px 40px;
   }
-  .banner {
-    margin-top: 28px;
+
+  header h1 {
+    font-size: 2.2rem;
+  }
+
+  header p {
+    font-size: 1rem;
+  }
+
+  .logo {
+    width: 54px;
+    height: 54px;
+  }
+
+  .banner-wrapper {
+    height: 220px;
+    border-radius: 16px;
+  }
+
+  section h2 {
+    font-size: 1.8rem;
+  }
+
+  .cta {
+    padding: 14px 28px;
+    font-size: 0.95rem;
   }
 }
 </style>
@@ -150,71 +161,30 @@ footer {
 <header class="hero">
 
   <div class="brand">
-    <img src="icon.png" class="logo" alt="Ph Imagens Icon">
+    <img src="icon.png" class="logo" alt="Ph Imagens logo">
     <h1>Ph Imagens</h1>
   </div>
 
   <p>Crie, explore e experimente imagens com IA em um mural criativo inteligente.</p>
 
-  <img src="banner.png" class="banner" alt="Ph Imagens Banner">
+  <div class="banner-wrapper">
+    <img src="banner.png" alt="Ph Imagens banner">
+  </div>
 
-  <a href="https://aistudio.google.com/apps/drive/1aH4kuxuLOmMf9e0wCiRY2wXmXkC6EOmc?fullscreenApplet=true&showPreview=true&showAssistant=true" 
-     class="cta" target="_blank">Abrir Ph Imagens</a>
+  <a class="cta" target="_blank"
+     href="https://aistudio.google.com/apps/drive/1aH4kuxuLOmMf9e0wCiRY2wXmXkC6EOmc?fullscreenApplet=true&showPreview=true&showAssistant=true">
+     Abrir Ph Imagens
+  </a>
 
 </header>
 
-<div class="container">
-
-<section>
-<h2>O que é o Ph Imagens?</h2>
-<p>
-Ph Imagens é um aplicativo de geração de imagens com inteligência artificial focado em criação visual,
-iteração rápida e organização criativa. Ele transforma ideias em imagens de forma simples, fluida e visual.
-</p>
+<section class="content">
+  <h2>O que é o Ph Imagens?</h2>
+  <p>
+    Ph Imagens é um aplicativo de geração de imagens com inteligência artificial focado em criação visual,
+    interação rápida e organização criativa. Ele transforma ideias em imagens de forma simples, fluida e visual.
+  </p>
 </section>
-
-<section>
-<h2>Como funciona</h2>
-<ul>
-<li>✦ Descreva sua ideia criativa</li>
-<li>✦ Envie imagens ou tire fotos como referência</li>
-<li>✦ Escolha entre Ph Imagens · Simples ou Ph Imagens · Pro</li>
-<li>✦ Gere imagens organizadas automaticamente no mural</li>
-</ul>
-</section>
-
-<section>
-<h2>Principais recursos</h2>
-<div class="grid">
-<div class="card">Geração de imagens com IA</div>
-<div class="card">Mural visual por gerações</div>
-<div class="card">Imagens de referência</div>
-<div class="card">Modelos Simples e Pro</div>
-<div class="card">Geração paralela</div>
-<div class="card">Fluxo criativo contínuo</div>
-</div>
-</section>
-
-<section>
-<h2>Por que usar</h2>
-<p>
-Diferente de geradores comuns, o Ph Imagens foi pensado como uma ferramenta criativa.
-Menos técnica. Mais visual. Mais fluxo. Mais criação.
-</p>
-</section>
-
-<section style="text-align:center">
-<h2>Pronto para criar?</h2>
-<a href="https://aistudio.google.com/apps/drive/1aH4kuxuLOmMf9e0wCiRY2wXmXkC6EOmc?fullscreenApplet=true&showPreview=true&showAssistant=true" 
-   class="cta" target="_blank">Testar Ph Imagens agora</a>
-</section>
-
-</div>
-
-<footer>
-Ph Imagens — Gerador de imagens com IA<br>
-Projeto experimental focado em criação visual, design e inteligência artificial.
-</footer>
 
 </body>
 </html>
